@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $duplicate_counter = 0;
 // Подключение дополнительных файлов
 require_once get_theme_file_path("assets/backend/config_db.php");
@@ -20,7 +18,7 @@ function redirect(string $path){
 // Подключение к бд
 function connect_database()
 {
-    return $link = mysqli_connect(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+    return $link = mysqli_connect(DATABASE_HOST, DATABASE_USERNAME, DATABASE_PASSWORD, DATABASE_NAME);
 }
 
 // Закрытие подключения к бд
@@ -83,7 +81,7 @@ function set_new_data_user_in_db($connect_db, $new_user_data){
 
     mysqli_query($connect_db, $sql);
     set_user_session($user_token);
-    redirect("../../home.php");
+    redirect(get_permalink(151));
 }
 
 // Проверка логина и пароля юзера на соответствие данным в бд

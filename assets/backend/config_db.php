@@ -1,6 +1,6 @@
 <?php
 
-const DB_HOST = 'localhost';
-const DB_NAME = 'shibaii.ru';
-const DB_USERNAME = 'root';
-const DB_PASSWORD = '';
+define("DATABASE_HOST", "localhost");
+define("DATABASE_NAME", "shibaii.ru");
+define("DATABASE_USERNAME", "root");
+define("DATABASE_PASSWORD", "");
