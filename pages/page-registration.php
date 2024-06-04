@@ -14,7 +14,7 @@ get_header(); ?>
         </span>
     </div>
     <div class="registration">
-        <div class="error-msg" id = "error">
+        <div class = "error-message_hide" id = "error">
             Ошибка, проверьте поля ввода
         </div>
         <form class = "form" id = "form-reg">

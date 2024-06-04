@@ -3,7 +3,7 @@ session_start();
 
 $duplicate_counter = 0;
 // Подключение дополнительных файлов
-require_once(get_template_directory_uri() . '/assets/backend/config_db.php');
+require_once get_theme_file_path("assets/backend/config_db.php");
 
 // Проверка переменной на соответствие регулярному выражению
 function regexp_check($regexp, $variable)

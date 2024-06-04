@@ -73,11 +73,11 @@ export function hide_error_message(field_error){
 // Показать сообщение об ошибке и выделить какое-либо поле с ошибкой
 export function show_error_message(message_object, field_error){
     message_object.textContent = get_validation_message();
-    message_object.classList.add("error-message");
+    message_object.className = "error-message";
     field_error.classList.add("error-border");
 }
 
 export function show_error_message_block(message_object){
     message_object.textContent = get_validation_message();
-    message_object.classList.add("error-message");
+    message_object.className = "error-message";
 }

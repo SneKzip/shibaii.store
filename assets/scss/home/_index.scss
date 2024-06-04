@@ -288,7 +288,7 @@
 }
 .registration{
     margin-top: 25px;
-    .error-msg{
+    .error-message{
         margin-bottom: 25px;
         width: 100%;
         height: 50px;
@@ -300,6 +300,9 @@
         font-size: 20px;
         font-weight: 500;
         color: #DC143C;
+    }
+    .error-message_hide{
+        display: none;
     }
     .form{
         width: 100%;

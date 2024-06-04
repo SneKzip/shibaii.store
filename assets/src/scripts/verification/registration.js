@@ -8,7 +8,7 @@ let counter = 0;
 form_reg.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    let user_data = user_get_set.get_form_data(form_reg);
+    let user_data = user_get_set.get_form_data(form_reg, "registration");
 
     for(let [key, value] of form_validation.user_validation_status){
         if(value == true){
@@ -20,17 +20,15 @@ form_reg.addEventListener("submit", (event) => {
     }
 
     if(counter == 4){
-        console.log("отправка запроса");
         send_user_data_on_backend(user_data);
     }
 
     counter = 0;
-    console.log(counter);
 });
 
 // Запрос на сервер
 async function send_user_data_on_backend(user_data){
-    let response = await fetch_request("../../assets/backend/verifications/registration.php", JSON.stringify(user_data));
+    let response = await fetch_request(ajax.url, user_data);
     if(response.redirected){
         console.log("редирект");
         document.location = response.url;
@@ -47,9 +45,6 @@ async function send_user_data_on_backend(user_data){
 async function fetch_request(url, json_data){
     const response = await fetch(url, {
         method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
         body: json_data
     });
     return response;
