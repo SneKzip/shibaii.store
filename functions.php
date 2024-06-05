@@ -22,3 +22,6 @@ require_once get_theme_file_path("assets/api/ACF/read.php");
 
 // Хук на AJAX запрос регистрации
 require_once get_theme_file_path("assets/api/requests/registration.php");
+
+// Хук на AJAX запрос авторизации
+require_once get_theme_file_path("assets/api/requests/authorization.php");

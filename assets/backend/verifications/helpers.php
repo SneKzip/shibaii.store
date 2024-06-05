@@ -92,7 +92,7 @@ function check_user_data_db(string $user_email, string $user_password){
     if(mysqli_num_rows($result) == 1){
         $request_result = get_mysqli_assoc($result, $user_password);
         if($request_result){
-            redirect("../../home.php");
+            redirect(get_permalink(157));
         }
         else{
             get_validation_error("Ошибка, почта или пароль неверные");
@@ -152,28 +152,4 @@ function get_validation_error(string $error_msg){
 function generate_random_user_token(){
     $bytes = openssl_random_pseudo_bytes(20, $cstrong);
 	return bin2hex($bytes); 
-}
-
-
-// Проверка авторизации пользователя
-function check_auth(){
-    $token;
-
-    if(isset($_COOKIE["token"])){
-        $token = $_COOKIE["token"];
-    }
-    else{
-        return false;
-    }
-
-    $connect_db = connect_database();
-    $sql_request = "SELECT * FROM users WHERE token = '$token'";
-    $result_sql_request = mysqli_query($connect_db, $sql_request);
-
-    if(mysqli_num_rows($result_sql_request) == 1){
-        return true;
-    }
-    else{
-        return false;
-    }
 }

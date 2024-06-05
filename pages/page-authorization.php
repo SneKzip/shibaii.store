@@ -14,17 +14,17 @@ get_header(); ?>
         </span>
     </div>
     <div class="registration">
-        <div class="error-msg" id = "error">
+        <div class = "error-message_hide" id = "error">
             Ошибка, проверьте поля ввода
         </div>
         <form class = "form" id = "form-reg">
             <label>
                 Почта
-                <input id = "email" type="email" name = "user_email" placeholder = "example@yandex.ru">
+                <input id = "email" type="email" name = "email" placeholder = "example@yandex.ru">
             </label>
             <label>
                 Пароль
-                <input id = "password" type="password" name = "user_password" placeholder = "********">
+                <input id = "password" type="password" name = "password" placeholder = "********">
             </label>
             <div class="alert">
                 <span>Нет аккаунта? <a href="<?php echo get_page_link(140); ?>">Зарегистрироваться</a></span>

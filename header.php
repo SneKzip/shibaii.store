@@ -29,11 +29,29 @@
             </div>
         </div>
     </div>
+
     <div class = "background">
         <div class="main-wrapper">
             <div class="main">
                 <div class="header">
-                    <a href="<?php echo get_home_url(); ?>" class="button">HOME</a>
-                    <a href="<?php echo get_page_link(21); ?>" class="button">PRICE</a>
-                    <a href="<?php echo get_page_link(23); ?>" class="button">INFO</a>
+                    <div class="nav">
+                        <a href="<?php echo get_home_url(); ?>" class="button">HOME</a>
+                        <a href="<?php echo get_page_link(21); ?>" class="button">PRICE</a>
+                        <a href="<?php echo get_page_link(23); ?>" class="button">INFO</a>
+                    </div> 
+                    <div class="profile-wrapper">
+                        <?php 
+                            require_once get_theme_file_path("assets/api/user/verification.php");
+                            if(verification_status()){
+                                ?> 
+                                <a href = "<?php echo get_page_link(157); ?>" class = "button">PROFILE</a>
+                                <?php
+                            }
+                            else{
+                                ?> 
+                                <a href = "<?php echo get_page_link(146); ?>" class = "button">PROFILE</a>
+                                <?php
+                            }
+                        ?>
+                    </div>
                 </div>

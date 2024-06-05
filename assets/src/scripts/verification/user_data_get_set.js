@@ -37,7 +37,7 @@ export function get_form_data(form_object, action_name){
 };
 
 // Сеттеры для данных пользователя
-export function set_user_name(name, field_object){
+function set_user_name(name, field_object){
     let result = form_validation.validation_user_name(name);
 
     if(result){
@@ -51,7 +51,7 @@ export function set_user_name(name, field_object){
     }
 };
 
-export function set_user_email(email, field_object){
+function set_user_email(email, field_object){
     let result = form_validation.validation_user_email(email);
 
     if(result == true){
@@ -59,13 +59,13 @@ export function set_user_email(email, field_object){
         user_data.append("email", email);
     }
     else{
-        form_validation.set_validation_message("Ошибка, почтовый адрес неверный");
+        form_validation.set_validation_message("Ошибка, почтовый адрес невалидный");
         form_validation.show_error_message(message_object, document.getElementsByName(field_object)[0]);
         user_data.delete("email");
     }
 };
 
-export function set_user_password(password, field_object){
+function set_user_password(password, field_object){
     let result = form_validation.validation_user_password(password);
     
     if(result){
@@ -79,7 +79,7 @@ export function set_user_password(password, field_object){
     }
 };
 
-export function set_user_password_confirmation(password_confirmation, field_object){
+function set_user_password_confirmation(password_confirmation, field_object){
     let result = form_validation.validation_user_password_confirmation(get_user_password(), password_confirmation);
     
     if(result){

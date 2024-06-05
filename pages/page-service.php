@@ -6,7 +6,7 @@ session_start();
 get_header();
 ?>
 <div class="content-price">
-<?php 
+    <?php 
         require_once get_theme_file_path("assets/api/user/verification.php");
         if(verification_status()){
             ?> 
