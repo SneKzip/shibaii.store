@@ -2,7 +2,6 @@
 /*
 Template Name: Шаблон страницы Price/Service
 */
-session_start();
 get_header();
 ?>
 <div class="content-price">

@@ -25,3 +25,6 @@ require_once get_theme_file_path("assets/api/requests/registration.php");
 
 // Хук на AJAX запрос авторизации
 require_once get_theme_file_path("assets/api/requests/authorization.php");
+
+// Хук на AJAX запрос логаута юзера
+require_once get_theme_file_path("assets/api/requests/logout.php");

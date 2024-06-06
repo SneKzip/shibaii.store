@@ -17,7 +17,7 @@ get_header(); ?>
         <div class = "error-message_hide" id = "error">
             Ошибка, проверьте поля ввода
         </div>
-        <form class = "form" id = "form-reg">
+        <form class = "form" id = "form-auth">
             <label>
                 Почта
                 <input id = "email" type="email" name = "email" placeholder = "example@yandex.ru">

@@ -5,26 +5,29 @@ let form_reg = document.querySelector("#form-reg");
 let error_block = document.querySelector("#error");
 let counter = 0;
 
-form_reg.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    let user_data = user_get_set.get_form_data(form_reg, "registration");
-
-    for(let [key, value] of form_validation.user_validation_status){
-        if(value == true){
-            counter++;
+if(form_reg){
+    form_reg.addEventListener("submit", (event) => {
+        event.preventDefault();
+    
+        let user_data = user_get_set.get_form_data(form_reg, "registration");
+    
+        for(let [key, value] of form_validation.user_validation_status){
+            if(value == true){
+                counter++;
+            }
+            else{
+                break;
+            }
         }
-        else{
-            break;
+    
+        if(counter == 4){
+            send_user_data_on_backend(user_data);
         }
-    }
+    
+        counter = 0;
+    });
+}
 
-    if(counter == 4){
-        send_user_data_on_backend(user_data);
-    }
-
-    counter = 0;
-});
 
 // Запрос на сервер
 async function send_user_data_on_backend(user_data){

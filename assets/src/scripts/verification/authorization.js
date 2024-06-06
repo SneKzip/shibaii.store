@@ -2,7 +2,7 @@ import * as user_get_set from "./user_data_get_set";
 import * as form_validation from "./user_data_validation";
 
 // Переменные
-let form_auth = document.querySelector("#form-reg");
+let form_auth = document.querySelector("#form-auth");
 let error_block = document.querySelector("#error");
 let counter = 0;
 
@@ -49,7 +49,9 @@ async function fetch_request(url, json_data){
 }
 
 // Отправка запроса на сервер
-form_auth.addEventListener("submit", (event) => {
-    event.preventDefault();
-    get_user_data();
-});
+if(form_auth){
+    form_auth.addEventListener("submit", (event) => {
+        event.preventDefault();
+        get_user_data();
+    });
+}

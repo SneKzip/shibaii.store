@@ -2,7 +2,7 @@
 /*
 Template Name: Шаблон страницы Home
 */
-get_header(); ?>
+get_header();?>
     <div class="content-home">
         <h1 class = "artist-name"><?php echo get_field("name_home"); ?></h1>
         <div class = "logo">
