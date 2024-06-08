@@ -1,4 +1,4 @@
-let exit_button = document.querySelector("#exit");
+let exit_button = document.querySelector("#logout");
 let logout_status = false;
 
 // Запрос на сервер
