@@ -283,7 +283,7 @@
     display: none;
 }
 
-// MAKE_COMMISION
+// AUTH
 .content{
     .header{
         margin-top: 25px;
@@ -634,3 +634,196 @@
   .Btn:active {
     transform: translate(2px ,2px);
   }
+
+// MAKE COMMISION
+.make_commission{
+    margin: 50px 0px 0px 0px;
+    .make_commission-header{
+        margin: 50px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header-title{
+            font-size: 48px;
+            font-weight: 100;
+        }
+    }
+    .make_commission-main{
+        margin: 30px 0px 0px 0px;
+        .commission_card{
+            box-shadow: 0px 0px 43px -4px #aca9cf;
+            border: 1px solid #aca9cf;
+            border-radius: 32px;
+            .button_delete_wrapper{
+                padding: 15px 15px 0px 0px;
+                display: flex;
+                justify-content: end;
+                .delete_card{
+                    transition: 0.1s;
+                    scale: 1;
+                    background-color: #e62222;
+                    width: 32px;
+                    height: 32px;
+                    border: 1px solid #e62222;
+                    border-radius: 16px;
+                }
+                .delete_card:hover{
+                    transition: 0.1s;
+                    scale: 1.3;
+                    background-color: #ff0000;
+                    border: 1px solid #ff0000;
+                }
+            }
+            .commission_card-header{
+                display: flex;
+                justify-content: center;
+                .header-title{
+                    font-size: 32px;
+                    font-weight: 300;
+                }
+            }
+            .commission_card-main{
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                margin: 30px 0px 30px 0px;
+                select{
+                    width: 200px;
+                    font-size: 20px;
+                    font-weight: 400;
+                    outline: none;
+                    padding: 0px 0px 0px 10px;
+                    border: 1px solid #aca9cf;
+                    border-radius: 5px;
+                    optgroup{
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                    option{
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+                .main-counter{
+                    display: flex;
+                    justify-content: center;
+                    width: 20%;
+                    .number-left{
+                        button{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 8px;
+                            border: 1px solid #212121;
+                            background-color: #212121;
+                            color: #FFFFFF;
+                            font-weight: 400;
+                            font-size: 20px;
+                        }
+                    }
+                    .number-quantity{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-weight: 400;
+                        font-size: 20px;
+                        width: 32px;
+                        height: 32px;
+                    }
+                    .number-right{
+                        button{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 8px;
+                            border: 1px solid #212121;
+                            background-color: #212121;
+                            color: #FFFFFF;
+                            font-weight: 400;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .make_commission-footer{
+        margin: 50px 0px 50px 0px;
+        display: flex;
+        justify-content: center;
+        .noselect {
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+            background: #e62222;
+           }
+           
+           .noselect, .noselect span {
+            transition: 200ms;
+           }
+           
+           .noselect .text {
+            transform: translateX(35px);
+            color: #FFFFFF;
+            font-size: 14px;
+            font-weight: 700;
+           }
+           
+           .noselect .icon {
+            position: absolute;
+            border-left: 1px solid #c41b1b;
+            transform: translateX(110px);
+            height: 40px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+           
+           .noselect svg {
+            width: 32px;
+            stroke: #FFFFFF;
+           }
+           
+           .noselect:hover {
+            background: #ff3636;
+           }
+           
+           .noselect:hover .text {
+            color: transparent;
+           }
+           
+           .noselect:hover .icon {
+            width: 150px;
+            border-left: none;
+            transform: translateX(0);
+           }
+           
+           .noselect:focus {
+            outline: none;
+           }
+           
+           .noselect:active .icon svg {
+            transform: scale(0.8);
+           }
+           
+           .add-card{
+                background-color: #3aa856;
+           }
+           .add-card .icon{
+                border-left: 1px solid #34974d;
+           }
+           .add-card:hover{
+            background-color: #3aa856;
+           }
+    }
+}

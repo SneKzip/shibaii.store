@@ -893,6 +893,248 @@ body {
           transform: translate(2px, 2px);
 }
 
+.make_commission {
+  margin: 50px 0px 0px 0px;
+}
+.make_commission .make_commission-header {
+  margin: 50px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.make_commission .make_commission-header .header-title {
+  font-size: 48px;
+  font-weight: 100;
+}
+.make_commission .make_commission-main {
+  margin: 30px 0px 0px 0px;
+}
+.make_commission .make_commission-main .commission_card {
+  -webkit-box-shadow: 0px 0px 43px -4px #aca9cf;
+          box-shadow: 0px 0px 43px -4px #aca9cf;
+  border: 1px solid #aca9cf;
+  border-radius: 32px;
+}
+.make_commission .make_commission-main .commission_card .button_delete_wrapper {
+  padding: 15px 15px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.make_commission .make_commission-main .commission_card .button_delete_wrapper .delete_card {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  scale: 1;
+  background-color: #e62222;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e62222;
+  border-radius: 16px;
+}
+.make_commission .make_commission-main .commission_card .button_delete_wrapper .delete_card:hover {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  scale: 1.3;
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+}
+.make_commission .make_commission-main .commission_card .commission_card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.make_commission .make_commission-main .commission_card .commission_card-header .header-title {
+  font-size: 32px;
+  font-weight: 300;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin: 30px 0px 30px 0px;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main select {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  padding: 0px 0px 0px 10px;
+  border: 1px solid #aca9cf;
+  border-radius: 5px;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main select optgroup {
+  font-size: 20px;
+  font-weight: 400;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main select option {
+  font-size: 20px;
+  font-weight: 400;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main .main-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main .main-counter .number-left button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #212121;
+  background-color: #212121;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main .main-counter .number-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  width: 32px;
+  height: 32px;
+}
+.make_commission .make_commission-main .commission_card .commission_card-main .main-counter .number-right button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid #212121;
+  background-color: #212121;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 20px;
+}
+.make_commission .make_commission-footer {
+  margin: 50px 0px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.make_commission .make_commission-footer .noselect {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+}
+.make_commission .make_commission-footer .noselect, .make_commission .make_commission-footer .noselect span {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+.make_commission .make_commission-footer .noselect .text {
+  -webkit-transform: translateX(35px);
+          transform: translateX(35px);
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+.make_commission .make_commission-footer .noselect .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.make_commission .make_commission-footer .noselect svg {
+  width: 32px;
+  stroke: #FFFFFF;
+}
+.make_commission .make_commission-footer .noselect:hover {
+  background: #ff3636;
+}
+.make_commission .make_commission-footer .noselect:hover .text {
+  color: transparent;
+}
+.make_commission .make_commission-footer .noselect:hover .icon {
+  width: 150px;
+  border-left: none;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.make_commission .make_commission-footer .noselect:focus {
+  outline: none;
+}
+.make_commission .make_commission-footer .noselect:active .icon svg {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.make_commission .make_commission-footer .add-card {
+  background-color: #3aa856;
+}
+.make_commission .make_commission-footer .add-card .icon {
+  border-left: 1px solid #34974d;
+}
+.make_commission .make_commission-footer .add-card:hover {
+  background-color: #3aa856;
+}
+
 .background {
   width: 100%;
   height: 100%;
