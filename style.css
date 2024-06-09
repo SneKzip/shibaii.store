@@ -914,6 +914,14 @@ body {
   font-weight: 100;
 }
 .make_commission .make_commission-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
   margin: 30px 0px 0px 0px;
 }
 .make_commission .make_commission-main .commission_card {
@@ -1133,6 +1141,30 @@ body {
 }
 .make_commission .make_commission-footer .add-card:hover {
   background-color: #3aa856;
+}
+
+.cart {
+  padding: 20px;
+  position: fixed;
+  top: 38px;
+  right: 100px;
+  width: 300px;
+  height: 200px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  border: 1px solid #aca9cf;
+}
+.cart .card_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cart .card_header span {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .background {
