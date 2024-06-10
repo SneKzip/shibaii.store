@@ -1,13 +1,17 @@
-export let card_container = document.getElementById("card-container");
-export let card_counter = 0;
+import * as counter from "./counter";
+
+let card_container = document.getElementById("card-container");
+let card_counter = 0;
 
 add_card();
 
 export function add_card(){
-    card_container.insertAdjacentHTML("beforeend", get_card_layout());
+    let card = get_card_layout();
+    card_container.insertAdjacentHTML("beforeend", card);
+    counter.counter_functions(card_counter);
 }
 
-export function get_card_layout(){
+function get_card_layout(){
     card_counter += 1;
     let card = 
     `<div class="commission_card" id = "card_id-${card_counter}">
@@ -37,16 +41,17 @@ export function get_card_layout(){
             </select>
             <div class="main-counter">
                 <div class="number-left">
-                    <button id = "minus-counter">-</button>
+                    <button id = "minus-counter-${card_counter}">-</button>
                 </div>
-                <div class = "number-quantity" id = "counter">
+                <div class = "number-quantity" id = "counter-${card_counter}">
                     1
                 </div>
                 <div class="number-right">
-                    <button id = "plus-counter">+</button>
+                    <button id = "plus-counter-${card_counter}">+</button>
                 </div>
             </div>
         </div>
     </div>`
+
     return card;
 }

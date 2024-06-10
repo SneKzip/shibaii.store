@@ -1,0 +1,47 @@
+[33mcommit 23f3808b433c3cbd53d718d7b4aff93cb1d7e0b3[m[33m ([m[1;36mHEAD -> [m[1;32mMain[m[33m)[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Sun Jun 9 14:11:33 2024 +0500
+
+    Added counter and button 'Add item' on commission page
+
+[33mcommit a5143229d1db1ebd3736747bc1590e32eab4cbe6[m[33m ([m[1;31morigin/Main[m[33m)[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Sat Jun 8 22:49:44 2024 +0500
+
+    Added commission layout
+
+[33mcommit d2f250ca4d8a941980d9861a9094056a375dadeb[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Sat Jun 8 16:31:27 2024 +0500
+
+    Added profile layout
+
+[33mcommit e28d1bdd11aa9d00bcfedcfae0f07c3135b6f483[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Thu Jun 6 13:51:05 2024 +0500
+
+    Fixed bugs
+
+[33mcommit b470da0d6f284947ba41da931fb82a18a1a11276[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Thu Jun 6 02:04:42 2024 +0500
+
+    Added authorization
+
+[33mcommit e790aa1c6710883640924c963b06fc4c755744b0[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Tue Jun 4 21:48:44 2024 +0500
+
+    Added user verification
+
+[33mcommit ef8308e69d9acf42d7c177b53e0745425ae72176[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Tue Jun 4 14:22:26 2024 +0500
+
+    Fixed registration
+
+[33mcommit ff98f7f7f946ccb46dea3726a5eea55ffe3a38ac[m
+Author: Kostya <grigo.ko2004@gmail.com>
+Date:   Sat Jun 1 18:35:20 2024 +0500
+
+    Added verification
