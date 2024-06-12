@@ -1,4 +1,5 @@
 import * as counter from "./counter";
+import * as select_option from "./select_option";
 
 let card_container = document.getElementById("card-container");
 let card_counter = 0;
@@ -9,6 +10,7 @@ export function add_card(){
     let card = get_card_layout();
     card_container.insertAdjacentHTML("beforeend", card);
     counter.counter_functions(card_counter);
+    select_option.set_order_position(card_counter);
 }
 
 function get_card_layout(){
@@ -21,22 +23,22 @@ function get_card_layout(){
             </button>
         </div>
         <div class="commission_card-header">
-            <h3 class = "header-title">Выберите товар</h3>
+            <h3 class = "header-title" id = "title_id-${card_counter}">Выберите товар</h3>
         </div>
         <div class="commission_card-main">
-            <select>
+            <select id = "select_id-${card_counter}">
                 <option disabled selected>Список услуг</option>
                 <optgroup label="Chibi">
-                    <option value="c1">Halfboby</option>
-                    <option value="c2">Fullbody</option>
+                    <option value="Chibi Halfobdy">Halfbody</option>
+                    <option value="Chibi Fullbody">Fullbody</option>
                 </optgroup>
                 <optgroup label="Illustration">
-                    <option value="s1">Headbody</option>
-                    <option value="s2">Halfbody</option>
-                    <option value="s3">Fullbody</option>
+                    <option value="Illustration Headbody">Headbody</option>
+                    <option value="Illustration Halfbody">Halfbody</option>
+                    <option value="Illustration Fullbody">Fullbody</option>
                 </optgroup>
                 <optgroup label="2D Models">
-                    <option value="s1">Fullbody</option>
+                    <option value="2D Models Fullbody">Fullbody</option>
                 </optgroup>
             </select>
             <div class="main-counter">
