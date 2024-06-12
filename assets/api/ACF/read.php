@@ -51,3 +51,21 @@ function get_models_data(){
         "fullbody_price" => get_field("fullbody_price", 33)
     ];
 }
+
+// function set_object_prices(){
+//     global $all_prices;
+//     $all_prices =[
+//         "chibi" => [
+//             "halfbody_price" => $_GLOBALS["chibi_data"]["halfbody_price"],
+//             "fullbody_price" => $_GLOBALS["chibi_data"]["fullbody_price"]
+//         ],
+//         "illustration" => [
+//             "headbody_price" => $_GLOBALS["illustration_data"]["headbody_price"],
+//             "halfbody_price" => $_GLOBALS["illustration_data"]["halfbody_price"],
+//             "fullbody_price" => $_GLOBALS["illustration_data"]["fullbody_price"]
+//         ],
+//         "models" => [
+//             "fullbody_price" => $_GLOBALS["models_data"]["fullbody_price"]
+//         ]
+//     ];
+// }

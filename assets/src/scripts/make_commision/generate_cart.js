@@ -44,5 +44,6 @@ function get_item_on_cart(item_name, item_quantity){
 
 function change_item(name_field, quantity_field, name, quantity){
     name_field.textContent = name;
-   quantity_field.textContent = quantity; 
+    quantity_field.textContent = quantity; 
 }
+

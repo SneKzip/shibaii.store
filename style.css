@@ -996,9 +996,7 @@ body {
   font-weight: 400;
 }
 .make_commission .make_commission-main .commission_card .commission_card-main .main-counter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

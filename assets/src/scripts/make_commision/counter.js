@@ -2,11 +2,14 @@ export function counter_functions(card_counter){
     let counter_container = document.querySelector(`#counter-${card_counter}`);
     let button_minus = document.querySelector(`#minus-counter-${card_counter}`);
     let button_plus = document.querySelector(`#plus-counter-${card_counter}`);
+    let counter_data_value = counter_container.getAttribute("data-value");
 
     const base_counter = 1;
 
     if(counter_container){
-        counter_container.textContent = base_counter;
+        counter_data_value = base_counter;
+        change_data_value();
+        counter_container.textContent = counter_data_value;
     }
 
     if(button_minus && button_plus){
@@ -17,17 +20,33 @@ export function counter_functions(card_counter){
     }
 
     function minus_counter(){
-        if(counter_container.textContent != 1){
-            counter_container.textContent -= 1;
+        if(counter_data_value != 1){
+            counter_data_value -= 1;
+            change_data_value();
+            change_quantity(card_counter);
+            counter_container.textContent = counter_data_value;
         }
         else{
-            counter_container.textContent = 1;
+            counter_data_value = 1;
+            counter_container.textContent = counter_data_value;
         }
     }
     
     function plus_counter(){
-        let quantity = parseInt(counter_container.textContent);
-        quantity += 1;
-        counter_container.textContent = quantity;
+        counter_data_value += 1;
+        change_data_value();
+        change_quantity(card_counter);
+        counter_container.textContent = counter_data_value;
+    }
+
+    function change_data_value(){
+        counter_container.setAttribute("data-value", counter_data_value);
+    }
+
+    function change_quantity(card_counter){
+        let data_value = document.getElementById(`counter-${card_counter}`).getAttribute("data-value");
+        let quantity_container = document.getElementById(`quantity-${card_counter}`);
+    
+        quantity_container.textContent = data_value;
     }
 }

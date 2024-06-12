@@ -41,12 +41,12 @@ function get_card_layout(){
                     <option value="2D Models Fullbody">Fullbody</option>
                 </optgroup>
             </select>
-            <div class="main-counter">
+            <div class="main-counter" id = "main-counter-${card_counter}">
                 <div class="number-left">
                     <button id = "minus-counter-${card_counter}">-</button>
                 </div>
-                <div class = "number-quantity" id = "counter-${card_counter}">
-                    1
+                <div data-value class = "number-quantity" id = "counter-${card_counter}">
+                    
                 </div>
                 <div class="number-right">
                     <button id = "plus-counter-${card_counter}">+</button>

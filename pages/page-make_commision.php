@@ -25,11 +25,11 @@ get_header(); ?>
         </div>
     </div>
     <div class="cart_footer">
-        <div class="footer-price">
+        <!-- <div class="footer-price">
             <span>Итоговая стоимость:</span>
             <span>15000</span>
             <span>руб.</span>
-        </div>
+        </div> -->
         <div class="footer-submit">
             <button>
                 <span class = "text">Заказать</span>
